@@ -29,18 +29,18 @@
         <section id="screenshots">
             <h2>Baptist Missions OS Gallery</h2>
             <div class="gallery">
-                <div class="gallery-item">
-                    <img src="/screenshots/desktop.png" alt="Baptist Missions OS Desktop Environment" title="Clean and productive desktop interface">
+                <div class="gallery-item" onclick="openModal('/screenshots/desktop.png', 'Desktop Environment')">
+                    <img src="/screenshots/desktop.png" alt="Baptist Missions OS Desktop Environment" title="Click to enlarge">
                     <h3>Desktop Environment</h3>
                     <p>Streamlined desktop with essential tools for missionary work</p>
                 </div>
-                <div class="gallery-item">
-                    <img src="/screenshots/menu.png" alt="Baptist Missions OS Application Menu" title="Easy access to all applications">
+                <div class="gallery-item" onclick="openModal('/screenshots/menu.png', 'Application Menu')">
+                    <img src="/screenshots/menu.png" alt="Baptist Missions OS Application Menu" title="Click to enlarge">
                     <h3>Application Menu</h3>
                     <p>Intuitive menu system for quick access to preloaded applications</p>
                 </div>
-                <div class="gallery-item">
-                    <img src="/screenshots/menu-support.png" alt="Baptist Missions OS Support Menu" title="Built-in support resources">
+                <div class="gallery-item" onclick="openModal('/screenshots/menu-support.png', 'Support Resources')">
+                    <img src="/screenshots/menu-support.png" alt="Baptist Missions OS Support Menu" title="Click to enlarge">
                     <h3>Support Resources</h3>
                     <p>Direct access to help and support documentation</p>
                 </div>
@@ -51,5 +51,74 @@
     <footer>
         <p>&copy; 2026 Baptist Missions OS Project</p>
     </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="photoModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+        <div class="modal-nav">
+            <button class="prev-btn" onclick="prevImage()">&#10094;</button>
+            <button class="next-btn" onclick="nextImage()">&#10095;</button>
+        </div>
+    </div>
+
+    <script>
+        const modalImages = [
+            {src: '/screenshots/desktop.png', title: 'Desktop Environment'},
+            {src: '/screenshots/menu.png', title: 'Application Menu'},
+            {src: '/screenshots/menu-support.png', title: 'Support Resources'}
+        ];
+        let currentImageIndex = 0;
+
+        function openModal(src, title) {
+            const modal = document.getElementById('photoModal');
+            const modalImg = document.getElementById('modalImage');
+            const captionText = document.getElementById('caption');
+            
+            currentImageIndex = modalImages.findIndex(img => img.src === src);
+            modalImg.src = src;
+            captionText.textContent = title;
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('photoModal');
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        function nextImage() {
+            currentImageIndex = (currentImageIndex + 1) % modalImages.length;
+            const img = modalImages[currentImageIndex];
+            document.getElementById('modalImage').src = img.src;
+            document.getElementById('caption').textContent = img.title;
+        }
+
+        function prevImage() {
+            currentImageIndex = (currentImageIndex - 1 + modalImages.length) % modalImages.length;
+            const img = modalImages[currentImageIndex];
+            document.getElementById('modalImage').src = img.src;
+            document.getElementById('caption').textContent = img.title;
+        }
+
+        // Close modal when clicking outside the image
+        document.getElementById('photoModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            const modal = document.getElementById('photoModal');
+            if (modal.style.display === 'block') {
+                if (e.key === 'ArrowRight') nextImage();
+                if (e.key === 'ArrowLeft') prevImage();
+                if (e.key === 'Escape') closeModal();
+            }
+        });
+    </script>
 </body>
 </html>
