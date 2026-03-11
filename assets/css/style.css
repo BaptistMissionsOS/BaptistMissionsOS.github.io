@@ -295,6 +295,28 @@ footer {
     background-color: rgba(255, 255, 255, 0.3);
 }
 
+/* Support Section Styles */
+#support ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#support li {
+    background: #e7f3fe;
+    margin: 10px 0;
+    padding: 15px;
+    border-left: 5px solid #2196F3;
+    border-radius: 0 4px 4px 0;
+}
+
+#support a {
+    color: #2196F3;
+    text-decoration: none;
+    font-weight: bold;
+    word-break: break-all;
+}
+
 /* Responsive adjustments */
 @media (min-width: 768px) {
     body {
