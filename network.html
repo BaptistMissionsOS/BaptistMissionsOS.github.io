@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network - Baptist Missions OS</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .hero-network {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .hero-network h2 {
+            color: #fff;
+            border-bottom: none;
+            margin-bottom: 15px;
+        }
+        .hero-network p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin: 0;
+        }
+        .btn-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin: 25px 0;
+        }
+        .btn-primary {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #2196F3;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: all 0.3s;
+            box-shadow: 0 2px 8px rgba(33, 150, 243, 0.3);
+        }
+        .btn-primary:hover {
+            background: #1976D2;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(33, 150, 243, 0.4);
+        }
+        .btn-secondary {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #fff;
+            color: #2c3e50;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            border: 2px solid #2c3e50;
+            transition: all 0.3s;
+        }
+        .btn-secondary:hover {
+            background: #2c3e50;
+            color: #fff;
+        }
+        .tech-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .tech-card {
+            background: #f9f9f9;
+            border-radius: 8px;
+            padding: 25px;
+            border-left: 5px solid #2196F3;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .tech-card h3 {
+            color: #2c3e50;
+            margin-top: 0;
+            font-size: 1.3rem;
+        }
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0 0 0;
+        }
+        .feature-list li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        .feature-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #2196F3;
+            font-weight: bold;
+        }
+        .highlight-box {
+            background: #e7f3fe;
+            border-left: 5px solid #2196F3;
+            padding: 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 20px 0;
+        }
+        .highlight-box h4 {
+            color: #2c3e50;
+            margin-top: 0;
+        }
+        .network-access {
+            text-align: center;
+            padding: 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 8px;
+            color: #fff;
+            margin: 30px 0;
+        }
+        .network-access h3 {
+            color: #fff;
+            margin-top: 0;
+        }
+        .network-access .btn-primary {
+            background: #fff;
+            color: #667eea;
+            margin-top: 15px;
+        }
+        .network-access .btn-primary:hover {
+            background: #f0f0f0;
+        }
+        @media (min-width: 768px) {
+            .tech-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Baptist Missions OS</h1>
+        <p>A Custom Ubuntu with IceWM Distro for Baptist Missionaries</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="network.html">Network</a></li>
+                <li><a href="downloads/downloads.html">Downloads</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-network">
+            <h2>Baptist Missions Network</h2>
+            <p>Decentralized, censorship-resistant, serverless web publishing for churches and missionaries worldwide using cutting-edge peer-to-peer technology.</p>
+        </section>
+
+        <section id="what-is-network">
+            <h2>What is the Baptist Missions Network?</h2>
+            <p>The Baptist Missions Network is a revolutionary approach to web publishing that eliminates the need for traditional web servers, hosting fees, and domain registrations. Built on the InterPlanetary File System (IPFS) and accessible through the Peersky browser, our network enables churches and missionaries to publish websites and applications that are:</p>
+            <ul class="feature-list">
+                <li><strong>Completely Free</strong> — No server costs, no hosting fees, no domain renewals</li>
+                <li><strong>Censorship-Resistant</strong> — Content cannot be easily blocked or taken down by governments or third parties</li>
+                <li><strong>Offline-Capable</strong> — Content can be accessed even without internet connectivity once cached</li>
+                <li><strong>Globally Distributed</strong> — Content is replicated across a worldwide network of peers</li>
+                <li><strong>Permanently Available</strong> — Content persists as long as it's being accessed</li>
+            </ul>
+        </section>
+
+        <section class="network-access">
+            <h3>Access the Baptist Missions Network</h3>
+            <p>Launch the network directly in your Peersky browser using the IPFS protocol.</p>
+            <a href="ipfs://bafybeidkwlxtqc5tb5sy3ojjivzxbtdolspef4gmaf7ljnjwhodad6acvy/" class="btn-primary">🌐 Launch Baptist Missions Network</a>
+        </section>
+
+        <section id="peersky-browser">
+            <h2>Peersky Browser</h2>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <h3>What is Peersky?</h3>
+                    <p>Peersky is a groundbreaking web browser designed specifically for the decentralized web. Unlike traditional browsers that only access HTTP/HTTPS content, Peersky natively supports IPFS and other peer-to-peer protocols, allowing you to browse the distributed web without any plugins or extensions.</p>
+                </div>
+                <div class="tech-card">
+                    <h3>Key Features</h3>
+                    <ul class="feature-list">
+                        <li>Native IPFS protocol support</li>
+                        <li>Built-in content caching for offline access</li>
+                        <li>Decentralized DNS resolution</li>
+                        <li>No central servers required</li>
+                        <li>Privacy-focused architecture</li>
+                        <li>Cross-platform compatibility</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="btn-group">
+                <a href="https://peersky.p2plabs.xyz/" class="btn-primary" target="_blank">⬇️ Download Peersky Browser</a>
+            </div>
+        </section>
+
+        <section id="ipfs-tech">
+            <h2>IPFS Technology</h2>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <h3>Understanding IPFS</h3>
+                    <p>The InterPlanetary File System (IPFS) is a protocol and peer-to-peer network for storing and sharing data in a distributed file system. Unlike traditional HTTP which locates content by address (where), IPFS locates content by what it is (content-addressed).</p>
+                </div>
+                <div class="tech-card">
+                    <h3>How P2P Works for You</h3>
+                    <p>When you access content on IPFS, you connect directly to peers who have that content rather than a central server. Each time you view a website, you also help distribute it to others, creating a resilient, self-sustaining network.</p>
+                </div>
+            </div>
+            <div class="highlight-box">
+                <h4>Why IPFS Matters for Missionaries</h4>
+                <p>In regions with unreliable internet, strict censorship, or limited financial resources, IPFS provides a way to publish and share content that remains accessible regardless of local infrastructure. Your website lives on the network itself, not on a single server that can fail or be blocked.</p>
+            </div>
+            <div class="btn-group">
+                <a href="https://ipfs.tech/" class="btn-secondary" target="_blank">🔗 Learn More About IPFS</a>
+            </div>
+        </section>
+
+        <section id="use-cases">
+            <h2>How Churches & Missionaries Can Use This Technology</h2>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <h3>For Churches</h3>
+                    <ul class="feature-list">
+                        <li>Publish church websites without monthly hosting costs</li>
+                        <li>Distribute sermon recordings and Bible studies</li>
+                        <li>Create censorship-resistant prayer networks</li>
+                        <li>Share liturgical resources across denominations</li>
+                        <li>Host event information that cannot be taken down</li>
+                    </ul>
+                </div>
+                <div class="tech-card">
+                    <h3>For Missionaries</h3>
+                    <ul class="feature-list">
+                        <li>Share testimonies and reports from the field</li>
+                        <li>Distribute training materials to local churches</li>
+                        <li>Publish content in restricted-access countries</li>
+                        <li>Create offline-accessible resources for remote areas</li>
+                        <li>Maintain communication channels that can't be blocked</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="highlight-box">
+                <h4>Zero Cost Publishing</h4>
+                <p>Traditional websites require: Domain registration ($10-15/year), Hosting ($5-50/month), SSL certificates, Server maintenance. With Baptist Missions Network on IPFS: <strong>All of this is free.</strong> Simply publish your content to the network and it's immediately available worldwide through the Peersky browser.</p>
+            </div>
+        </section>
+
+        <section id="network-gallery">
+            <h2>Baptist Missions Network Gallery</h2>
+            <div class="gallery">
+                <div class="gallery-item" onclick="openModal('/screenshots/network/peersky.png', 'Peersky Browser')">
+                    <img src="/screenshots/network/peersky.png" alt="Peersky Browser Interface" title="Click to enlarge">
+                    <h3>Peersky Browser</h3>
+                    <p>Modern browser interface with native IPFS support for accessing decentralized content</p>
+                </div>
+                <div class="gallery-item" onclick="openModal('/screenshots/network/bmos_network_main.png', 'Network Main Page')">
+                    <img src="/screenshots/network/bmos_network_main.png" alt="Baptist Missions Network Main Page" title="Click to enlarge">
+                    <h3>Network Main Page</h3>
+                    <p>The Baptist Missions Network homepage with quick access to resources and tools</p>
+                </div>
+                <div class="gallery-item" onclick="openModal('/screenshots/network/bmos_network_login.png', 'Secure Login')">
+                    <img src="/screenshots/network/bmos_network_login.png" alt="Baptist Missions Network Login" title="Click to enlarge">
+                    <h3>Secure Access</h3>
+                    <p>Protected login system for authorized missionaries and church administrators</p>
+                </div>
+                <div class="gallery-item" onclick="openModal('/screenshots/network/bmos_network_admin.png', 'Admin Dashboard')">
+                    <img src="/screenshots/network/bmos_network_admin.png" alt="Network Admin Dashboard" title="Click to enlarge">
+                    <h3>Admin Dashboard</h3>
+                    <p>Comprehensive administration panel for managing network resources and users</p>
+                </div>
+                <div class="gallery-item" onclick="openModal('/screenshots/network/bmos_network_download.png', 'Download Center')">
+                    <img src="/screenshots/network/bmos_network_download.png" alt="Network Download Center" title="Click to enlarge">
+                    <h3>Download Center</h3>
+                    <p>Centralized resource distribution for software, documents, and media</p>
+                </div>
+                <div class="gallery-item" onclick="openModal('/screenshots/network/bmos_network_peersky_app.png', 'Peersky Application')">
+                    <img src="/screenshots/network/bmos_network_peersky_app.png" alt="Peersky Application" title="Click to enlarge">
+                    <h3>Peersky Application</h3>
+                    <p>Integrated Peersky app for seamless P2P browsing within the network</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Baptist Missions OS Project</p>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="photoModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+        <div class="modal-nav">
+            <button class="prev-btn" onclick="prevImage()">&#10094;</button>
+            <button class="next-btn" onclick="nextImage()">&#10095;</button>
+        </div>
+    </div>
+
+    <script>
+        const modalImages = [
+            {src: '/screenshots/network/peersky.png', title: 'Peersky Browser'},
+            {src: '/screenshots/network/bmos_network_main.png', title: 'Network Main Page'},
+            {src: '/screenshots/network/bmos_network_login.png', title: 'Secure Login'},
+            {src: '/screenshots/network/bmos_network_admin.png', title: 'Admin Dashboard'},
+            {src: '/screenshots/network/bmos_network_download.png', title: 'Download Center'},
+            {src: '/screenshots/network/bmos_network_peersky_app.png', title: 'Peersky Application'}
+        ];
+        let currentImageIndex = 0;
+
+        function openModal(src, title) {
+            const modal = document.getElementById('photoModal');
+            const modalImg = document.getElementById('modalImage');
+            const captionText = document.getElementById('caption');
+            
+            currentImageIndex = modalImages.findIndex(img => img.src === src);
+            modalImg.src = src;
+            captionText.textContent = title;
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('photoModal');
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        function nextImage() {
+            currentImageIndex = (currentImageIndex + 1) % modalImages.length;
+            const img = modalImages[currentImageIndex];
+            document.getElementById('modalImage').src = img.src;
+            document.getElementById('caption').textContent = img.title;
+        }
+
+        function prevImage() {
+            currentImageIndex = (currentImageIndex - 1 + modalImages.length) % modalImages.length;
+            const img = modalImages[currentImageIndex];
+            document.getElementById('modalImage').src = img.src;
+            document.getElementById('caption').textContent = img.title;
+        }
+
+        // Close modal when clicking outside the image
+        document.getElementById('photoModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            const modal = document.getElementById('photoModal');
+            if (modal.style.display === 'block') {
+                if (e.key === 'ArrowRight') nextImage();
+                if (e.key === 'ArrowLeft') prevImage();
+                if (e.key === 'Escape') closeModal();
+            }
+        });
+    </script>
+</body>
+</html>
